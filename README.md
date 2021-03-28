@@ -35,3 +35,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
     创建分支dev并切换到dev分支
   在dev分支push代码
     远程仓库又dev分支就更新, 没有就创建
+  在dev修改好了代码后, 推送至远程的dev
+  本地切换至master分支, 将dev分支代码合并到master上
+    git merge dev
+  再将master分支的代码推送至远程的master
