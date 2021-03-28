@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <!-- 
+      device-width: 设备宽度（视觉视口） 
+      width： 布局视口
+      width=device-width解决布局视口和视觉视口不一样带来的问题
+      user-scalable=no： 禁止用户缩放
+    -->
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_2450322_rizrwkdphh.css">
+  <title>HXT外卖</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+  <script>
+    if ('addEventListener' in document) {
+      document.addEventListener('DOMContentLoaded', function () {
+        FastClick.attach(document.body);
+      }, false);
+    }
+
+    // function remRefresh() {
+    //   // 1. 获取屏幕的宽度
+    //   let clientWidth = document.documentElement.clientWidth
+    //   // 2. 将屏幕的宽度等分: 16 10  目的: 降低单位rem值的大小, 便于换算,提高精确度
+    //   let rem = clientWidth / 10
+    //   // 3. 设置根节点的字体大小
+    //   document.documentElement.style.fontSize = rem + 'px'
+    //   // 4. 
+    //   document.body.style.fontSize = '16px'
+    // }
+
+    // //页面加载显示的事件
+    // window.addEventListener('pageshow',()=>{
+    //   remRefresh()
+    // })
+    // let timer
+    // //窗口大小改变的事件
+    // window.addEventListener('resize',()=>{
+    //   // 每一次都是清空上一次的定时器
+    //   /* 
+    //     只有当你是最后一次触发此事件的时候才会执行seTimeout,
+    //     不然就清空上一次的延时定时器, 重新开定时器,
+    //     当定时器函数还没有执行的时候,你又触发了,就重新开一个,清除你上一次的定时器
+    //   */
+    //   // if (timer) {
+    //   //   clearTimeout(timer)
+    //   // }
+    //   //函数防抖
+    //   !!timer && clearTimeout(timer)
+    //   timer = setTimeout(() => {
+    //     console.log('1111111');
+    //     remRefresh()
+    //   }, 300);
+    // })
+  </script>
+</body>
+
+</html>
