@@ -29,3 +29,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
   而是看位置,看跳转的路由和路由显示的区域的关系
   如果跳转的路由是在显示路由的区域里面切换页面的,那就是显示当前路由的子路由
   如果跳转的页面是改变的当前的路由的界面, 那么是兄弟关系的路由
+
+## git切换分支
+  使用 git checkout -b dev
+    创建分支dev并切换到dev分支
+  在dev分支push代码
+    远程仓库又dev分支就更新, 没有就创建
