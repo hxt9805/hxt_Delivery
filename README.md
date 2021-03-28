@@ -39,3 +39,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
   本地切换至master分支, 将dev分支代码合并到master上
     git merge dev
   再将master分支的代码推送至远程的master
+
+## 克隆代码
+  使用git clone 仓库地址
+  注意此时本地只会又master分支,但是远程并不是只有master分支
+  使用git checkout -b dev origin/dev 
+  这是根据远程的dev 创建本地的dev分支, 如果只写git checkout -b dev是根据本地创建dev分支, 远程的dev分支的代码是没有的
